@@ -1,0 +1,46 @@
+|<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Fondo.jpg">
+</head>
+<body class="container">
+    <header class="header">
+        <img src="Logo (1).png" alt="" class="logo">
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main class="presentacion">
+        <section class="sección-izquierda">
+            <textarea name="textarea" rows="10" cols="50" class="textarea">Ingrese el texto aqui...</textarea>
+            <div class="regla">
+                <img src="bi_exclamation-circle-fill.png" alt="" class="icono-regla">
+                <h6 class="reglas">solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button onclick="botonEncriptar()" class= "boton-encriptar">Encriptar</button>
+                <button onclick="botonDesencriptar()" class="boton-desencriptar">Desencriptar</button>
+            </div>
+            <span id="mensaje-error" class="mensaje-error"></span>    
+        </section>
+        <section class="sección-derecha">
+            <div class="encripta-texto"id ="encripta-texto" style="display:none;">
+                <textarea  class="texto-procesado" name="textarea1" id=""></textarea>
+                <button class="boton-copiar" onclick="copiar()">Copiar</button>
+                <span id="mensaje-confirmacion" class="mensaje-confirmacion"></span>
+            </div>
+            <div class="ocultar">
+                <img class="buscador" src="Buscador.PNG" alt="" >
+                <p class="texto1">Ningún mensaje fue encontrado:</p>
+                <p class="texto2">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Camila B.Sánchez</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
